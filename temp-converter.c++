@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using  namespace std ;
 
 int main () {
@@ -7,18 +7,22 @@ int main () {
     cout<< "Temp Converter App";
     cout<< endl;
     cout<< endl;
-    cout << "1. Faren to Cel" << endl << "2.Faren to Kel" << endl << "3. Cel to Faren"<<endl<<"4. Kel to Cel";
+    cout << "1.Faren to Cel" << endl << "2.Faren to Kel" << endl << "3.Cel to Faren"<<endl<<"4.Kel to Cel"<<endl<<endl<<"Select : ";
     cin>> selected ;
     switch (selected)
     {
     case 1:
-        cout<< "Please input the value of Faren";
+        cout<< "Please input the value of Faren : ";
         cin>> f ;
-        //  (5.0 / 9.0) * (fahrenheit - 32)
+        cout<<endl ;
+        cout << f <<" Farentheit : " <<(5.0 / 9.0) * (f - 32) << " Celcius" ;
         break;
     
     case 2:
-        /* code */
+        cout<< "Please input the value of Faren : ";
+        cin>> f ;
+        cout<<endl ;
+        cout << f <<" Farentheit : " << (f - 32) * (5/9) + 273.15  << " Kelvin" ;
         break;
     
     default:
