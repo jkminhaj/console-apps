@@ -2,7 +2,6 @@
 using  namespace std ;
 
 
-
 int main () {
     int selected ;
     float  c , f , k ;
